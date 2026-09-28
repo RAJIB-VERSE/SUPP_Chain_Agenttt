@@ -1,0 +1,56 @@
+# Security & Secrets Prevention
+.env
+.env.*
+*.pem
+*.key
+credentials
+aws_credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Configs
+aws_config.json
+*config.json
+frontend/aws-exports.js
+
+node_modules/
+.sam/
+.aws-sam/
+.DS_Store

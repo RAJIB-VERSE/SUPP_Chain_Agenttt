@@ -1,0 +1,1244 @@
+﻿python : Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+At line:1 char:1
++ python -c "
++ ~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Could not get F...sed as 4 floats:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Total pages: 56
+--- PAGE 1 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+?
+Agentic AI Supply Chain System
+Complete Documentation ? FMCG / Biscuit Sector
+Literature Review ? Market Data ? Architecture ? Pipelines ? Gap Analysis ? Scope
+Document Version: 1.0
+Prepared for: 2-Person Founding Team
+Target Companies: Biskfarm, Britannia, ITC, Parle, Local FMCG Brands
+Status: Research & Planning Phase
+Page 1 of 56
+--- PAGE 2 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+? AGENTIC AI SUPPLY CHAIN SYSTEM
+Complete Documentation ? FMCG / Biscuit Sector
+Literature Review ? Market Data ? Architecture ? Pipelines ? Gap Analysis ? Scope
+Document Version: 1.0
+Prepared for: 2-Person Founding Team
+Target Companies: Biskfarm, Britannia, ITC, Parle, Local FMCG Brands
+Status: Research & Planning Phase
+? TABLE OF CONTENTS
+1. Executive Summary
+2. Literature Review ? Deep Dive
+3. What We Have Currently ? Knowledge State
+4. Market Growth & Opportunity
+5. Full System Architecture
+6. Data Pipeline ? Detailed Flow
+7. Feature-Level Flow Diagrams
+8. Agent Interaction Diagrams
+9. Gap Analysis ? What Exists vs What We Build
+10. What We Need to Learn
+11. Scope to Build & Improve
+12. Phase-wise Execution Plan
+13. Technology Stack ? Deep Dive
+14. Business Model & Monetisation
+15. Risk Register
+16. References & Sources
+Page 2 of 56
+--- PAGE 3 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+1. Executive Summary
+This document is the complete reference blueprint for building an Agentic AI-powered supply chain intelligence
+platform for the biscuit and FMCG distribution sector in India.
+The system addresses a ?15,000 crore problem: Indian FMCG distributors lose an estimated 8?15% of potential
+revenue annually due to stockouts, poor demand forecasting, over-stocking of slow movers, and missed festive
+demand peaks. No agentic, India-specific, end-to-end solution exists for this sector today.
+The 6 Core Capabilities We Are Building
+???????????????????????????????????????????????????????????????????????
+? CAPABILITY 1 ? Area ? SKU Demand Heatmap (which area needs what) ?
+? CAPABILITY 2 ? Offer / Promotion Generator (AI-driven schemes) ?
+? CAPABILITY 3 ? Weekly Auto Stock Order (inventory intelligence) ?
+? CAPABILITY 4 ? Festive & Batch Demand Forecasting (spike alerts) ?
+? CAPABILITY 5 ? Distribution Planning (weekly/bi-weekly beats) ?
+? CAPABILITY 6 ? Quick Commerce Supply Integration (dark stores) ?
+???????????????????????????????????????????????????????????????????????
+2. Literature Review ? Deep Dive
+2.1 Supply Chain Intelligence ? Historical Evolution
+The field of supply chain management has evolved through three distinct paradigms:
+Page 3 of 56
+--- PAGE 4 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Evolution of Supply Chain Intelligence
+Era 1 - Rule Based Era 2 - Predictive AI Era 3 - Agentic AI
+Pre-2010 2010-2022 2023-Present
+The Core Difference: Predictive vs Agentic
+Page 4 of 56
+--- PAGE 5 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+TRADITIONAL AI
+DIMENSION AGENTIC AI
+(PREDICTIVE)
+"Demand will spike 22% next Automatically raises PO, alerts distributor,
+Output
+week" adjusts beat plan
+Agent decides and executes (with optional
+Decision Human decides what to do
+human approval)
+Adaptability Needs manual retraining Self-updates from feedback loops
+Error handling Human intervention required Critic agent reviews and re-plans
+Speed Days to respond Minutes to respond
+External
+Limited inputs Weather, events, social media, competitor data
+signals
+2.2 AI & ML in FMCG ? Global Research
+2.2.1 Demand Forecasting ? State of the Art
+Best-performing demand forecasting models for FMCG (as of 2024):
+ACCURACY
+MODEL TYPE BEST FOR LIMITATION
+RANGE
+Stable, low-volatility Cannot handle promotions or
+SARIMA 60?72%
+SKUs events
+XGBoost / Mixed signals, tabular
+75?85% Needs large historical dataset
+LightGBM data
+Seasonal patterns,
+Facebook Prophet 72?82% Poor on short-history SKUs
+holidays
+LSTM Neural Complex time-series
+78?88% Computationally expensive
+Networks patterns
+Ensemble (hybrid) 85?92% Production systems More complex to maintain
+LLM + RAG Needs careful prompt
+88?94% Multi-signal integration
+(emerging) engineering
+2.2.2 Key Demand Signals & Their Proven Impact
+Page 5 of 56
+--- PAGE 6 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Input Signals
+Historical POS Sales Baseline 60-70%
+Festive Calendar +10-15%
+Weather Patterns +5-8%
+Promotions and Offers +8-12%
+Combined Model
+85-94% Accuracy
+Competitor Pricing +4-7%
+Social Media Trends +3-6%
+Local Events and Melas +4-8%
+Economic Indicators +2-4%
+2.2.3 ROI Evidence from FMCG Implementations
+Published industry case studies (IBM, Deloitte, McKinsey, 2023?2024):
+Page 6 of 56
+--- PAGE 7 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+IMPROVEMENT
+KPI SOURCE
+REPORTED
+Deloitte FMCG Supply Chain Report
+Stockout rate reduction 15?30%
+2024
+Forecast error (MAPE) IBM Institute for Business Value
+20?50%
+improvement 2024
+Inventory holding cost reduction 25?35% McKinsey Operations Practice 2023
+Accenture Supply Chain Survey
+Working capital released 18?28%
+2024
+Kanerika AI Supply Chain Study
+Order processing time Days ? Minutes
+2024
+Revenue growth vs. non-AI IBM IBV High Performer Analysis
+5.8? faster
+peers 2024
+2.3 Biscuit Industry ? Category-Specific Research
+2.3.1 Why Biscuits Are a Uniquely Interesting Category
+Price-sensitive - Rs5/Rs10 packs
+dominate
+Weather-driven - rain means Impulse-heavy - 70% unplanned
+comfort snacking purchases
+Clear signals - festivals and
+weather Demand Patterns
+Highly seasonal - festive spikes
+High data frequency - daily 3-9 month shelf life
+transactions AI Opportunity
+Biscuit Category Regional taste variants
+Measurable t o ra u c tc e o a m bl e e - stockouts Repeatable patterns - seasonal Supply Complexity
+cycles
+150+ active SKUs per brand
+Q-Commerce growing in urban Distribution Reality Multiple weight variants
+impulse
+10M+ retail touchpoints in India 4-tier - Factory to CF to
+Distributor to Retailer
+Kiranas still 85%+ of
+rural/semi-urban
+2.3.2 Regional Preference Map
+Page 7 of 56
+--- PAGE 8 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+DOMINANT BISCUIT
+REGION KEY BRANDS OCCASION
+TYPE
+North India (UP, Bihar, Glucose, cream Parle-G, Britannia Daily consumption,
+Punjab) biscuits Tiger tea
+South India (TN, Kerala, Digestive, whole Health-conscious,
+Sunfeast, Horlicks
+Andhra) wheat gifting
+West India (Gujarat, Good Day,
+Cream, wafers Premium, urban
+Maharashtra) Bourbon
+Biskfarm, local
+East India (Bengal, Odisha) Sweet, coconut Festive, pooja
+brands
+Economy packs (?5?
+Tier-2/3 Cities (all regions) Parle, local Volume, affordability
+?10)
+2.3.3 Britannia ? The Most Studied Case in India
+BEFORE Pre-2018
+AFTER 2022-Present Factory Production
+C&F with
+real-time tracking
+C&F Agent
+7-14 day transit
+Distributor with
+auto-replenishment DMS
+Distributor
+demand signal Manual order by phone/visit
+Factory with Retailer with
+sell-out signal
+AI demand signal SFA order app
+Retailer
+Stock out often unknown
+Consumer
+Stock always available
+Consumer
+Lost sale
+Measured outcomes after Britannia's transformation:
+Lead time reduced by 30?40%
+Inventory holding cut by ~25%
+Page 8 of 56
+--- PAGE 9 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Stockout incidents down ~20% in digitized zones
+2.4 India FMCG Distribution ? Unique Context
+2.4.1 The Visibility Gap Problem
+Manufacturer Distributor Zone Retail Consumer
+PRIMARY SALES SECONDARY SALES TERTIARY SALES
+Factory ? Full visibility Distributor Warehouse ? Partial visibility Kirana/Retail Store ? Near-zero visibility End Consumer
+(invoices, quantities) (DMS data, often manual) (consumer buys, no data)
+The Visibility Gap = The manufacturer only reliably sees primary sales. They are effectively blind to real
+consumer demand. This causes the bullwhip effect ? demand distortion that amplifies upstream.
+2.4.2 India Distribution Scale ? Numbers
+METRIC FIGURE
+Total retail outlets in India ~12?14 million
+Kirana stores (traditional) ~10?12 million (85%+)
+Modern trade outlets ~50,000?60,000
+Q-commerce dark stores (2024) ~4,000?5,000 (growing fast)
+Typical biscuit company distributors 2,000?8,000 per company
+Retailers per distributor 200?1,500
+Distributor tech adoption (DMS) ~35?40%
+Distributor using Excel/manual ~55?60%
+2.4.3 GST as the Hidden Data Gold Mine
+Post-2017 GST implementation has created an unprecedented digital paper trail. Every invoice is digitally filed. With
+distributor consent, this provides granular secondary sales data that was impossible to access pre-2017 ? a uniquely
+Indian advantage.
+Page 9 of 56
+--- PAGE 10 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+2.5 Quick Commerce ? The New Distribution Layer
+2.5.1 Q-Commerce Market Growth (India)
+YEAR GMV (USD) KEY MILESTONE
+2022 $1.5B Blinkit, Zepto, Swiggy Instamart scaling
+2024 $6?7B Q-comm = 2/3rd of all e-grocery orders
+2027 ~$22B Expansion to Tier-2 cities
+2030 $40?50B 10% of total branded retail sales
+2.5.2 Why Q-Commerce Changes Biscuit Supply Chains
+Q-commerce reveals demand in real-time (vs. kirana which hides it for 3?7 days):
+Consumer Blinkit/Zepto App Dark Store Distributor AI System Distributor Warehouse
+Orders "Good Day Cashew 150g"
+Pick and pack in 90 seconds
+Inventory drops to threshold
+Auto-alert - Stock critical
+Calculates replenishment quantity
+Auto-raise purchase order
+Replenish within 4 hours
+This real-time signal feeds back into demand model
+Consumer Blinkit/Zepto App Dark Store Distributor AI System Distributor Warehouse
+2.6 Festive Demand & Promotional Planning Research
+2.6.1 India's Festive Calendar ? Demand Impact
+Page 10 of 56
+--- PAGE 11 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+India Festive Demand Calendar (FMCG Impact)
+Diwali Season
+HIGH IMPACT +25 to 40%
+Durga Puja East India
+Navratri
+MEDIUM IMPACT +15 to 25% Dussehra
+Christmas and New Year
+Holi
+MODERATE IMPACT +10 to 20% Onam Kerala
+Raksha Bandhan
+Regional Melas
+LOCAL EVENTS Varies School Reopening
+IPL Season
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan
+2.6.2 Promotional Effectiveness Research
+MANUAL AI-DRIVEN
+METRIC IMPROVEMENT
+PLANNING PLANNING
+Promotion planning lead time 4?6 weeks 1?2 weeks 60?70% faster
+Stockout during promo period 18?25% of SKUs 5?8% of SKUs ~70% reduction
+~65%
+Excess stock after promo ends 12?20% unsold 3?7% unsold
+reduction
+Distributor scheme claim
+65?75% 90?95% ~25% better
+accuracy
+ROI per promotional rupee ?1.8?2.2 ?2.8?3.5 40?60% better
+2.7 Multi-Agent AI Systems ? Architecture Research
+2.7.1 Framework Comparison
+Page 11 of 56
+--- PAGE 12 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+FEATURE LANGGRAPH CREWAI
+Philosophy Graph-based state machine Role-based team simulation
+Best for Complex conditional logic, audit trails Quick collaborative workflows
+State management Explicit, persistent, customizable Simplified via task outputs
+Human-in-the-loop Native support (breakpoints) Plugin-based
+Production readiness Enterprise-grade Excellent for operational scaling
+Our recommendation Phase 3+ (complex agents) Phase 1?2 (fast prototyping)
+2.7.2 Design Patterns We Will Implement
+Page 12 of 56
+--- PAGE 13 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Pattern 3 - Human in the Loop
+Human Breakpoint
+Modify Approve Reject
+Agent Generates Order Action Taken Log and Learn
+Pattern 2 - Critic-Refiner
+Critic Reviews Plan
+Invalid Valid
+Agent Proposes Plan Execute
+Pattern 1 - Orchestrator-Worker
+Worker 1
+Result Task
+Orchestrator
+Task Result
+Worker 2
+Page 13 of 56
+--- PAGE 14 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+3. What We Have Currently ? Knowledge State
+3.1 Research Knowledge Gathered
+AI supply chain CAGR 47% India
+ROI benchmarks from 15 Tech readiness in India assessed
+companies
+India FMCG market structure
+mapped Q-commerce GMV 6B to 50B by
+Market Intelligence 2030
+Festive demand calendar mapped Britannia case study documented
+Competitive landscape mapped
+Multi-agent patterns identified Q-commerce market data 2024-30 LangGraph vs CrewAI compared
+Literature and Research
+Current Knowledge Base Technology Landscape GST data opportunity identified
+Supply chain AI evolution 3 eras
+documented
+FMCG 6 M 0 L - 9 m 4 o % d a e c l c b u e r n a c c h y marks Funding landscape researched DMS integration patterns known Prop b h e e n t c p h l m us a r X k G e B d oost
+Medallion data pipeline
+Business Understanding architecture
+SaaS pricing model understood
+Distributor pain points
+Visibility gap problem defined documented
+ONDC and GST regulatory context
+3.2 Data We Need to Gather (Before Building)
+DATA TYPE SOURCE STATUS PRIORITY
+Historical sales data (1 distributor, 1?
+Pilot distributor ? Not acquired ? Critical
+2 years)
+SKU master list (products, variants,
+Target FMCG company ? Not acquired ? Critical
+prices)
+Field survey /
+Retailer database (area-wise) ? Not acquired ? Critical
+distributor
+? Partially
+Festive calendar API Public / custom built ? High
+available
+Regional weather API OpenWeatherMap, IMD ? Available (API) ? Ready
+Public data / ? Partially
+Q-commerce dark store locations ? High
+partnerships available
+?
+Competitor pricing feeds Web scraping / reports ? Not built
+Medium
+?
+Local event / mela data Government portals ? Not built
+Medium
+Page 14 of 56
+--- PAGE 15 ---
+3.3 Technology Readiness Assessment
+Plan Carefully Build First
+Basic Stock Alert System
+Festive Calendar Integration
+Demand Heatmap Dashboard
+LLM Promotion Generator
+WhatsApp Bot InterAfaucteo PO Generation
+Strategic Investment Defer
+Q-commerce Integration
+Vehicle Route Optimization
+Multi-Agent Orchestration
+Low Importance High Importance
+dliuB
+ot
+ysaE
+dliuB
+ot
+draH
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Technology Component Readiness vs. Importance
+Page 15 of 56
+--- PAGE 16 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+4. Market Growth & Opportunity
+4.1 Target Market Sizing ? India
+Total Addressable Market TAM
+Indian FMCG Industry
+Rs 5.5 Lakh Crore - $66B
+All FMCG companies in India
+Serviceable Addressable Market SAM
+FMCG Distribution Tech and AI
+Rs 12,000 Crore - $1.5B
+Distributors and Brands needing AI SCM
+Serviceable Obtainable Market SOM
+Our Realistic Target Year 3
+Rs 120-200 Crore - $15-25M
+Biscuit/Snack distributors 2-3 states
+4.2 Global AI Supply Chain Market
+MARKET 2023 2028 CAGR
+AI in Global Supply Chain $6.2B $28.3B 35.4%
+AI in Indian FMCG Supply Chain $0.4B $2.8B 47.0%
+FMCG Distribution Tech India $1.1B $4.5B 32.0%
+Q-Commerce India $6.5B ~$35B ~40.0%
+Last-Mile Delivery India $7.5B $20B+ 12?13%
+Page 16 of 56
+--- PAGE 17 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+4.3 Distributor Pain Points ? Financial Impact
+A typical mid-size FMCG distributor with ?1 Crore monthly turnover loses:
+PAIN POINT MONTHLY LOSS ESTIMATE
+Stockouts (lost sales) ?4?8 Lakhs
+Over-stocking (carrying cost + expiry write-offs) ?2?5 Lakhs
+Manual order processing (labour cost) ?50K?1.5 Lakhs
+Missed promotional scheme claims ?1?3 Lakhs
+Sub-optimal delivery routes ?75K?2 Lakhs
+Total Monthly Pain ?8?19 Lakhs
+Annual Pain ?96 Lakhs ? ?2.3 Crores
+Page 17 of 56
+--- PAGE 18 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+5. Full System Architecture
+5.1 High-Level Architecture Overview
+DATA SOURCES
+Distributor DMS / Tally / ERP Retailer SFA App Weather API Festive Calendar Service GST Portal Data with Consent Competitor Price Feeds Q-Commerce Dark Store APIs
+DATA INGESTION LAYER
+API Connectors File Importers CSV/Excel Webhook Listeners Web Scrapers
+DATA PIPELINE - Medallion Architecture
+Bronze Layer
+Raw Ingested Data
+PostgreSQL + S3
+Silver Layer
+Cleaned and Standardized
+TimescaleDB
+Gold Layer
+Aggregated Analytics
+Mart Tables
+AI / ML ENGINE
+Demand Forecast Models Inventory Optimization Promotion Engine LLM Route Optimization
+AGENT LAYER - Multi-Agent System
+Demand Forecast Agent Inventory Agent Promotion Agent Distribution Agent Q-Commerce Agent
+Critic Agent
+Orchestrator Agent
+ACTION LAYER
+Auto-Generated Purchase Orders Promotional Offers and Alerts Beat Plans and Delivery Schedules Dark Store Replenishment Triggers
+USER INTERFACES
+Distributor Web Dashboard Mobile App PWA WhatsApp Bot Analytics Reports
+Page 18 of 56
+--- PAGE 19 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+5.2 Multi-Agent Orchestration Detail
+HUMAN OVERSIGHT
+Distributor Dashboard
+Approve / Modify / Reject
+Feedback
+ORCHESTRATOR LAYER
+Orchestrator Agent
+Decomposes goals
+Coordinates workers
+Manages conflicts
+Approved
+WORKER AGENTS
+Demand Forecast Agent Inventory Agent Promotion Agent Distribution Agent Q-Commerce Agent Issues Found
+CRITIC LAYER
+Critic Agent
+Validates decisions
+against constraints
+before execution
+5.3 Database Schema (Conceptual)
+DISTRIBUTOR
+int id PK
+string name
+string region
+string city
+string state
+float lat
+serves float lng runs
+holds places
+receives
+RETAILER SKU PROMOTION
+STOCK_LEVEL DEMAND_FORECAST
+int id PK int id PK PURCHASE_ORDER int id PK
+int id PK int id PK
+int distributor_id FK string product_name int id PK int distributor_id FK
+int distributor_id FK int distributor_id FK
+string name string brand int distributor_id FK string type
+int sku_id FK int sku_id FK
+string area string category date generated_date string trigger_event
+date snapshot_date date forecast_week
+float lat float weight_grams string status date valid_from
+int units_available float predicted_units
+float lng float mrp bool human_approved date valid_to
+date oldest_batch_date float confidence_pct
+string channel_type int shelf_life_days string offer_text
+generates sold in
+SALES_TRANSACTION
+int id PK
+int retailer_id FK
+int sku_id FK
+date sale_date
+int quantity
+float value
+string channel
+Page 19 of 56
+--- PAGE 20 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+6. Data Pipeline ? Detailed Flow
+6.1 The Medallion Architecture
+SOURCES
+Tally/DMS Export CSV/Excel Manual Input Distributor App SFA App Real-time API Weather API JSON Festive Calendar JSON Q-Commerce Webhook Real-time
+BRONZE LAYER - Raw Storage
+No transformation applied
+raw_sales_transactions raw_stock_levels raw_weather_signals raw_event_calendar raw_qcommerce_alerts Stored as-is
+Timestamp and source tagged
+SILVER LAYER - Cleaned and Standardized
+D S u K p N U l c i u c l s l e a l t s a t a e n n h s _ d a s n r a a e d r l d m e le i s o z d e ve d d Ba U t c c n le h D it a a s a n t g n _ e e o i n p r c v a m a e r l a s n c e l t u i d o z la e ry t d ed All sign c a le ls a n u _ n e if x ie te d r n b a y l _ d s a i t g e n a a l n s d area Ar B J e u o a s i i n c n s o e d s o s e n s l S o s K g t i U a c n m a d p a a p r s d t li e i e z r d ed
+GOLD LAYER - Analytics-Ready
+Aggrega w te e e d k e l m y_ a a n r d e a b _ y s k a u r _ e d a e x m S a K n U d x week distr S i t b F o u I c F t k o O r v _ b s i a n s t v a c e f h e n t s t y t o a r s t y t u _ o s h c e k alth All sign d a e ls m m an e d rg _ e fo d r e re c a a d st y _ f in or p u M t L s model ROI by p o r f o f m er o t t i y o p n e _ p b e y r a fo re rm a a a n n c d e season Po P w P o o e w w rs e e r a r s s g d e M a n L s t h m d b e o o c d a i e r s d l i s o s ns
+Page 20 of 56
+--- PAGE 21 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+6.2 Real-time vs. Batch Processing
+Page 21 of 56
+--- PAGE 22 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Page 22 of 56
+--- PAGE 23 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+SCHEDULED - Weekly
+Sunday Night Cron
+Weekly planning run
+Beat Plan Generated
+for coming week
+Promotional Calendar
+updated for week
+REAL-TIME - Event-driven
+Q-Commerce Alert
+Stock threshold hit
+Agent Triggered
+Instant
+Replenishment Order
+raised in under 5 minutes
+BATCH - Daily Nightly
+Daily Sales Upload
+by Distributor
+ETL Pipeline
+Cleaning and Transform
+Page 23 of 56
+--- PAGE 24 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+ML Model Run
+Demand Forecast Update
+Auto PO Generation
+for next week
+Page 24 of 56
+--- PAGE 25 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+7. Feature-Level Flow Diagrams
+7.1 Feature 1: Area ? SKU Demand Heatmap
+Page 25 of 56
+--- PAGE 26 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Page 26 of 56
+--- PAGE 27 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Daily Trigger: 11 PM
+Fetch last 7 days
+sales data from Silver Layer
+Enrich with
+Weather signals
+Festive calendar
+Local event flags
+Run XGBoost
+Demand Forecast Model
+Per Area x Per SKU
+Score each area-SKU pair
+HIGH / MEDIUM / LOW
+demand intensity
+Generate Heatmap
+GeoJSON output
+Mapbox/Plotly render
+Any area showing
+more than 30% spike?
+Page 27 of 56
+--- PAGE 28 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Yes
+Push notification to distributor:
+No
+Zone X High demand for Product Y expected
+Update dashboard silently
+Heatmap Live on Dashboard
+Page 28 of 56
+--- PAGE 29 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+7.2 Feature 2: Offer & Promotion Generator
+Page 29 of 56
+--- PAGE 30 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Promotion Triggers
+Festive event Slow-moving SKU Over-stocked area Competitor offer
+less than 3 weeks away more than 21 days no reorder more than 150% safety stock detected in area
+Promotion Agent
+Evaluates context
+Set Parameters
+Offer type: 2+1 discount bundle
+Target area and SKU
+Valid period
+Budget ceiling
+LLM Call - Gemini or GPT-4
+Generate offer copy
+in regional language
+Offer copy generated
+Hindi / Marathi / Bengali
+SMS-ready format
+WhatsApp-ready format
+Predict ROI
+based on historical promotion performance
+Distributor Approval Required
+Approve Modify Reject
+Broadcast offer
+Distributor edits parameters Log rejection feedback to model
+to retailers via SMS and WhatsApp and App
+Track redemption and performance
+Feed result back to promotion model
+Page 30 of 56
+--- PAGE 31 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+7.3 Feature 3: Weekly Stock Order Generation
+Page 31 of 56
+--- PAGE 32 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Page 32 of 56
+--- PAGE 33 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Sunday 8 PM Weekly Cron Job
+Read current
+stock levels from Silver Layer
+Read 7-day demand
+forecast per SKU
+Inventory Agent Calculations
+Compute Safety Stock
+= Avg Daily Demand x
+Lead Time x Variability Factor
+Compute Order Quantity
+= Forecast plus Safety Stock
+minus Current Stock
+minus In-Transit Stock
+Check batch ages
+Prioritize FIFO
+Flag near-expiry
+Generate Draft PO per SKU
+with quantities and reasoning
+Display on Distributor Dashboard
+for review
+Page 33 of 56
+--- PAGE 34 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Human Review
+24-hour window
+Modify
+Approve Distributor adjusts quantities
+Submit PO to
+Manufacturer/C&F system
+Track delivery vs ordered quantities
+Update model with actual delivery data
+Page 34 of 56
+--- PAGE 35 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+7.4 Feature 4: Festive Batch Demand Forecasting
+Page 35 of 56
+--- PAGE 36 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Page 36 of 56
+--- PAGE 37 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Historical Sales Festive Calendar API Regional Consumer FMCG Company
+Last 3 years festive periods upcoming 12 weeks Sentiment Proxy Promotional Plans
+Seasonal Time-Series Model
+Prophet plus XGBoost Ensemble
+6-8 Week Ahead Forecast
+per SKU x Area x Festival
+Rank SKUs by Expected
+Demand Spike: Low/Medium/High/Critical
+Pre-positioning Recommendations
+Order X units of Y
+4 weeks before Diwali
+Batch Planning
+Flag which production batches to prioritize
+Distributor Alert:
+Diwali in 38 days
+Order 240% normal qty for Good Day Zone B
+Distributor Confirms Pre-order
+Yes Later
+Raise Pre-order PO with manufacturer Re-alert in 7 days if not acted
+Monitoractualfestive
+Page 37 of 56
+--- PAGE 38 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Monitor actual festive
+sales vs forecast during event
+Retrain model with actual data for next year
+7.5 Feature 5: Distribution Planning
+OPTIMIZATION ENGINE
+INPUTS
+OUTPUTS
+Retailer demand for the week
+Beat Plan per Salesman/Vehicle
+Available stock per SKU
+Daily Route Map with stops sequence
+Vehicle Routing
+Schedule Optimizer
+Vehicle capacity: trucks/vans/bikes Problem Solver Retailer-Vehicle Assignment
+time windows
+Google OR-Tools
+Delivery Manifest per stop
+Retailer location coordinates
+ETA estimates per retailer
+Delivery priority: high-velocity first
+7.6 Feature 6: Quick Commerce Integration
+Dark Store Blinkit/Zepto Webhook Handler Q-Commerce Agent Inventory Service Distributor System Manufacturer C&F
+Stock alert - SKU X below threshold
+Trigger replenishment task
+Check distributor stock for SKU X
+alt [Distributor has sufficient stock]
+Stock available - 500 units
+Auto-raise delivery order for dark store
+Delivery scheduled same day
+[Distributor stock insufficient]
+Only 50 units available
+Partial delivery plus trigger urgent PO
+Emergency PO raised
+Dispatch within 48h confirmed
+Partial delivery now and full in 48h
+Update demand model with Q-com consumption rate
+This signal feeds back to weekly forecast model
+Dark Store Blinkit/Zepto Webhook Handler Q-Commerce Agent Inventory Service Distributor System Manufacturer C&F
+Page 38 of 56
+--- PAGE 39 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+8. Agent Interaction Diagrams
+8.1 Weekly Planning Cycle ? Full Agent Interaction
+Orchestrator Demand Agent Inventory Agent Promo Agent Distribution Agent Critic Agent Distributor
+Sunday 8 PM - Weekly planning cycle starts
+Run demand forecast for coming week
+Fetch signals - sales, weather, calendar
+Forecast ready - SKU x Area demand matrix
+Check stock vs. forecast
+Compute gaps, safety stock, FIFO needs
+Stock order recommendation - PO list
+Any promotions warranted?
+Check slow movers, festive proximity
+2 promotions recommended
+Generate beat plan
+Run VRP optimization
+Beat plan ready - Route and Manifest
+Review all decisions
+Validate against budget, capacity, logic
+alt [All decisions valid]
+Approved
+Dashboard updated with all recommendations
+[Issues found]
+Issues - PO budget exceeded by 12%
+Revise PO - reduce non-critical SKUs
+Revised PO ready
+Dashboard updated with revised plan
+Approve / Modify / Reject each recommendation
+Execute approved actions and log feedback
+Orchestrator Demand Agent Inventory Agent Promo Agent Distribution Agent Critic Agent Distributor
+Page 39 of 56
+--- PAGE 40 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+8.2 Festive Event Detection & Response
+Page 40 of 56
+--- PAGE 41 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Page 41 of 56
+--- PAGE 42 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Calendar Service
+Detects: Diwali in 42 days
+Orchestrator Triggered
+Demand Agent
+Run festive forecast for 42-day window
+Forecast Results
+Good Day 100g Treat Chocolate Marie Gold
++180% spike expected +140% spike expected +40% increase
+Zone A, B, D Zone A, C All zones
+Inventory Agent
+Calculate pre-order quantities
+Promotion Agent
+Design festive bundle offer
+Create Diwali Gift Pack
+Bundle: Good Day plus Treat combo
+Page 42 of 56
+--- PAGE 43 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Critic Agent
+Validate feasibility
+Update Distributor Dashboard
+with 42-day action plan
+WhatsApp Alert to Distributor:
+Diwali Plan Ready - Check Dashboard
+Page 43 of 56
+--- PAGE 44 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+9. Gap Analysis ? What Exists vs. What We Build
+9.1 Competitive Landscape
+EXISTING SOLUTIONS
+Bizom / Dista
+SFA + DMS tools
+Rule-based not AI
+No festive intelligence
+No Q-commerce link
+Rs 500-2000 per user per month
+SAP / Oracle SCM
+Enterprise supply chain
+OUR SYSTEM
+Too expensive Rs 50L+ setup
+Not India-FMCG specific
+Our Agentic AI Platform
+No regional promotions
+Agentic - acts not just predicts
+Rs 10-50 Crore implementation
+India-specific festive intelligence
+Q-commerce integrated
+Regional language output
+SME distributor pricing
+Salesforce DMS
+WhatsApp-first UX
+CRM + distributor mgmt
+Rs 5000-15000 per month per distributor
+No AI demand forecasting
+No route optimization
+No festive planning
+Rs 3000-5000 per user per month
+Generic ML Platforms
+Databricks, Vertex AI
+No FMCG domain logic
+No India festive data
+DIY no product
+High engineering cost
+Page 44 of 56
+--- PAGE 45 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+9.2 Feature Gap Matrix
+FEATURE BIZOM SAP SALESFORCE OUR SYSTEM
+Area ? SKU demand ?
+? Yes ? No ? AI-powered
+heatmap Basic
+? Rule-
+Agentic auto-ordering ? No ? No ? AI agent
+based
+Festive demand prediction ? No ? Manual ? No ? AI + calendar
+? LLM-
+Regional language offers ? No ? No ? No
+generated
+Q-commerce integration ? No ? Custom ? No ? Built-in
+WhatsApp distributor bot ? No ? No ? No ? Phase 5
+?
+FIFO batch management ? Yes ? No ? AI agent
+Basic
+SME pricing under
+? Yes ? No ? No ? Yes
+?15K/month
+Continuous learning ? No ? No ? No ? Feedback loop
+Page 45 of 56
+--- PAGE 46 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+10. What We Need to Learn
+10.1 Technical Learning Roadmap
+Learning Roadmap - 2-Person Technical Team
+Python FastAPI Mastery
+PostgreSQL plus TimescaleDB
+XGBoost Demand Forecasting
+Person 1 - Technical Lead Facebook Prophet Seasonal
+LangGraph Multi-Agent
+Google OR-Tools VRP
+AWS Deployment and DevOps
+FMCG Domain Deep Dive
+Next.js Dashboard
+Person 2 - Product Lead Mapbox Geo Charts
+Twilio WhatsApp API
+Distributor UX Research
+2025-10-01 2025-11-01 2025-12-01 2026-01-01 2026-02-01 2026-03-01
+10.2 Domain Knowledge We Must Acquire
+AREA WHAT TO LEARN HOW TO LEARN PRIORITY
+FMCG distribution Trade margins, credit cycles, Shadow 2?3 distributors for
+? Critical
+mechanics scheme structures 1 week each
+Biscuit SKU lifecycle Shelf life, FIFO, expiry policies Distributor warehouse visits ? Critical
+India festive Regional FMCG sales
+State-by-state festival timing ? High
+calendar nuances manager interviews
+Tally/DMS Tally developer
+API formats, data schemas ? High
+integration documentation
+Q-commerce dark ?
+Blinkit/Swiggy ops workflow Partnership conversations
+store ops Medium
+GST data access e-invoicing APIs, consent ?
+GSTN developer portal
+legally frameworks Medium
+Page 46 of 56
+--- PAGE 47 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+10.3 Technology Learning Priority Path
+MUST LEARN FIRST Month 1-2
+Python FastAPI PostgreSQL + TimescaleDB XGBoost Demand Forecasting React / Next.js Dashboard AWS S3 + EC2 basics
+LEARN IN PARALLEL Month 2-4
+Facebook Prophet LangChain Basics Mapbox / Plotly Celery + Redis
+Seasonal Forecasting Before LangGraph Geo Visualisation Async Task Queue
+LEARN WHEN NEEDED Month 4-8
+Multi-Ag L e a n n t g O G r r c a h p e h stration G V o e o h g ic le le O R R o - u T t o i o n l g s Wh T a w t i s l A io p A p P B I ot Supabase Auth + Multi-tenant
+ADVANCED Month 8+
+Fine-tuning LLMs on domain data Real-time streaming Kafka MLOps MLflow + model monitoring
+Page 47 of 56
+--- PAGE 48 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+11. Scope to Build & Improve
+11.1 MVP vs. Full Product Scope
+PHASE 3 - Month 12-18
+PHASE 2 - Month 6-12
+WhatsApp Bot
+MVP SCOPE - 6 Months
+Multi-Distributor Network
+LLM Promotion Generator
+Area x SKU Demand Dashboard
+FIFO Batch Management
+Weekly Auto-PO Generation
+Stock Alert Notifications
+Festive Pre-order Warnings
+Distribution Beat Planner
+Distributor Web Dashboard
+Q-Commerce Integration
+Manufacturer Integration
+B2B SaaS Platform
+Page 48 of 56
+--- PAGE 49 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+11.2 Sector Improvement Scope ? Beyond This System
+Relevant offers at right time
+Right stock always on shelf
+Reduce retailer credit risk Less packaging waste no
+over-ordering
+More efficient capital use Retailer Side
+Environmental Impact Less fuel waste optimised routes
+More transparent trade
+Economic Impact
+Less food spoilage
+Sector Improvement Scope
+Faster festive pre-positioning
+Higher distributor margins
+Favourite SKU always available
+Consumer Side Distributor Side Improve working capital
+Cut overproduction through efficiency
+demand-driven manufacturing Supply Side
+Eliminate manual Excel ordering
+Relevant promotions
+Reduce food waste via
+near-expiry detection Fair promotional claim
+settlement
+Improve production planning with
+upstream demand signals
+11.3 Future AI Capabilities ? Research Frontier
+RESEARCH IMPLEMENTATION
+CAPABILITY
+STAGE TIMELINE
+Computer vision (shelf monitoring via retailer phone Applied
+24?36 months
+camera) research
+LLM negotiation agent (auto-negotiate with supplier
+Emerging 18?24 months
+on price)
+Generative demand simulation (synthetic data for
+Research 12?18 months
+rare events)
+Federated learning (learn across distributors Applied
+24?36 months
+without sharing raw data) research
+Voice-first distributor interface (speak to system in
+Ready today 12?18 months
+Hindi)
+Carbon footprint tracking per delivery route Available 18?24 months
+Page 49 of 56
+--- PAGE 50 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+12. Phase-wise Execution Plan
+12.1 Master Timeline ? Gantt View
+Agentic AI Biscuit Supply Chain - Full Execution Timeline
+Pilot distributor identification
+Data audit and mapping
+Phase 0 - Foundation
+Cloud infrastructure setup
+KPI baseline measurement
+ETL pipeline Bronze layer
+Silver layer cleaning logic
+Phase 1 - Data Pipeline
+First demand heatmap basic
+Distributor dashboard v1
+Inventory agent core
+Auto-PO generation logic
+Phase 2 - Auto Ordering
+Human approval workflow
+Promotion generator v1
+Seasonal time-series model
+Festive demand forecast feature
+Phase 3 - Festive Intelligence
+Batch FIFO agent
+First festive season live test
+VRP route optimizer
+Beat plan generator
+Phase 4 - Distribution and Q-Commerce
+Q-commerce API integration
+Dark store replenishment agent
+WhatsApp bot v1
+Multi-distributor expansion
+Phase 5 - Scale
+Manufacturer upstream integration
+B2B SaaS platform v1
+2025-10-021025-11-021025-12-021026-01-021026-02-200126-03-021026-04-021026-05-021026-06-021026-07-021026-08-021026-09-021026-10-021026-11-021026-12-021027-01-01
+12.2 Phase-by-Phase Key Tasks
+PHASE 0: Foundation & Discovery (Weeks 1?6)
+Page 50 of 56
+--- PAGE 51 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+TASK WHO OUTPUT
+Visit 3?5 distributors, shadow daily workflow Person 2 Process documentation
+Collect 12?24 months past sales data Person 2 Raw CSV/Excel files
+Data quality audit Person 1 Data quality report
+Set up AWS (EC2, RDS, S3) Person 1 Cloud environment
+Define 5 KPIs with baseline measurements Both KPI tracking doc
+Legal: NDA with pilot distributor Both Signed NDA
+KPIs to baseline:
+1. Current stockout rate (%)
+2. Current forecast accuracy (if any)
+3. Time taken to prepare weekly stock order (hours)
+4. Festive stockout rate last year
+5. Delivery efficiency (stops per day per vehicle)
+PHASE 1: Data Pipeline & First Intelligence (Weeks 7?16)
+Milestone: Distributor can see for the first time ? "which of my areas is selling what."
+Week 7-9 Week 10-12 Week 13-14 Week 15-16 Week 16
+Bronze Layer ETL Silver Layer Gold Layer XGBoost Model Dashboard v1
+from Tally/Excel SKU normalization Weekly aggregation Plotly Heatmap Distributor login
+PHASE 2: Auto-Ordering & Promotions (Weeks 17?26)
+Milestone: "Distributor clicks Approve on an AI-generated PO for the first time."
+Key deliverables:
+Inventory Agent (stock gaps, safety stock, order qty per SKU)
+Draft PO generation UI with line-by-line review
+One-click approve workflow
+LLM-based promotion generator (LangChain + GPT-4/Gemini API)
+Basic SMS notification for distributor
+PHASE 3: Festive Intelligence (Weeks 27?36)
+Critical success test: Compare stockout rate during Diwali 2026 vs. Diwali 2025 (manual). Target: >40% reduction.
+Key deliverables:
+Page 51 of 56
+--- PAGE 52 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Prophet-based seasonal model with festival features
+6?8 week ahead festive forecast dashboard view
+Calendar widget showing demand intensity by week
+FIFO batch tracking + expiry alert agent
+Batch pre-order workflow (raise POs 6?8 weeks early)
+PHASE 4: Distribution & Q-Commerce (Weeks 37?48)
+Key deliverables:
+Google OR-Tools VRP integration
+Beat plan generator with map view
+Retailer priority scoring (high-velocity retailers first)
+Q-commerce dark store API integration
+Real-time dark store inventory webhook listener
+Auto-trigger replenishment for dark store stockouts
+PHASE 5: Scale (Months 13?18)
+Key deliverables:
+WhatsApp bot (Twilio) ? distributor asks in Hindi: "How much Good Day should I order?"
+Multi-distributor network (5+ distributors on platform)
+Manufacturer integration: anonymized demand signals fed upstream
+B2B SaaS packaging: pricing tiers, self-serve onboarding
+Competitor price intelligence (web scraping + alert)
+13. Technology Stack ? Deep Dive
+13.1 Full Stack Map
+Frontend Mobile and Bot
+Infrastructure
+Observability AWS EC2 - App Servers
+Sentry - Error Tracking
+AWS RDS - Database
+Grafana - Metrics Next.js 14 App Router Recharts - Bar/Line Charts Mapbox GL JS - Geo Heatmaps React Query - Data fetching Tailwind CSS - Styling PWA - Mobile Web App Twilio - WhatsApp Business
+CloudFront - CDN
+MLflow - Model Tracking
+GitHub Actions - CI/CD
+Backend
+FastAPI - Python REST API
+Redis - Cache and Task Queue Celery - Async Task Worker LangGraph - Agent Orchestration
+Data Storage ML and AI
+PostgreSQL - Transactional DB TimescaleDB - Time-series AWS S3 - Files and ML Models Supabase - Auth and Realtime D X e G m B a o n o d s t F / o L r ig e h c t a G st B i M ng Se F a a s c o e n b a o l o F k o P re ro c p a h st e i t ng L G L e M m f i o n r i / P G ro P m T- o 4 t i A o P n I s OR-Tools - Vehicle Routing scikit-learn - Preprocessing
+Page 52 of 56
+--- PAGE 53 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+13.2 Monthly Cloud & API Cost Estimate
+SERVICE MVP STAGE GROWTH STAGE SCALE STAGE
+AWS EC2 (t3.medium) Free tier ~$35/month ~$150/month
+AWS RDS (PostgreSQL) Free tier ~$25/month ~$100/month
+AWS S3 5GB free ~$5/month ~$20/month
+OpenAI/Gemini API $5 credits ~$50/month ~$300/month
+Mapbox (geo maps) 50K loads free ~$20/month ~$100/month
+Twilio WhatsApp Pay per message ~$30/month ~$150/month
+TOTAL ~$0 ~$165/month ~$820/month
+14. Business Model & Monetisation
+14.1 Revenue Tiers
+TIER 3 - Enterprise - Rs 20000+ per distributor TIER 2 - Growth - Rs 10000/month per distributor
+PLATFORM FEES - from Manufacturer TIER 1 - Starter - Rs 5000/month per distributor
+Everything in Growth Everything in Starter
+Rs 2-5 Lakhs/month for Britannia/ITC scale Distribution planning Auto-PO generation Demand heatmap
+Aggregated demand insights Q-commerce integration Festive forecasting Stock alerts
+Brand x region dashboards Manufacturer integration Promotion generator Basic PO suggestions
+Promotional ROI analytics Custom reporting WhatsApp bot Email support
+Dedicated account manager Priority support
+Page 53 of 56
+--- PAGE 54 ---
+14.2 Unit Economics Projection
+METRIC YEAR 1 YEAR 2 YEAR 3
+Distributors on platform 10 80 300
+Average revenue per distributor ?8,000/month ?9,000/month ?10,000/month
+Monthly Recurring Revenue ?80,000 ?7.2 Lakhs ?30 Lakhs
+Annual Recurring Revenue ?9.6 Lakhs ?86 Lakhs ?3.6 Crore
+Gross margin (target) 65% 72% 78%
+15. Risk Register
+Mitigate High Priority Monitor Closely
+Data Quality Issues
+Funding Gap
+Distributor Adoption Resistance
+Key PeArIs oMno dDeelp Iennadcecnucraycy Early On
+Competitor Copying
+Accept Watch
+Internet Connectivity Distributor
+Low Likelihood High Likelihood
+tcapmI
+hgiH
+tcapmI
+woL
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+Risk Register - Likelihood vs Impact
+Page 54 of 56
+--- PAGE 55 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+RISK MITIGATION
+Data quality is poor Start with 1 clean distributor dataset; build validation into ETL from day 1
+Distributors won't Give them value FIRST (heatmap dashboard free); charge only after proven
+adopt value
+AI model inaccuracy Show human-reviewable recommendations; never auto-execute without
+early approval initially
+Competitor copies Build network effects: more distributors = better model = harder to replicate
+Funding gap Bootstrap Phase 0?2; seek first revenue before Phase 3; apply for grants
+Key person
+Document everything; cross-train both team members on critical paths
+dependency
+TIP
+Apply for
+STARTUP INDIA
+,
+NASSCOM DEEPTECH
+, or
+GOOGLE FOR STARTUPS
+grants ? AI-powered supply chain tools qualify under multiple government funding schemes.
+Page 55 of 56
+--- PAGE 56 ---
+Agentic AI Supply Chain System ? FMCG / Biscuit Sector
+16. References & Sources
+# SOURCE TYPE YEAR
+1 Deloitte: "Agentic AI in Supply Chains" Industry Report 2024
+2 IBM Institute for Business Value: "AI in FMCG" Research 2024
+3 McKinsey Operations Practice: "Supply Chain Reinvention" Consulting 2023
+4 Kanerika: "AI-Driven FMCG Case Studies" Industry 2024
+5 Accenture Supply Chain Survey Research 2024
+6 IIT Kanpur: "AI Applications in Indian FMCG" Academic 2023
+7 arXiv: "Multi-Agent Systems for Supply Chain" Academic 2024
+8 NTT Data: "Britannia Supply Chain Optimization" Case Study 2023
+9 Analytics India Mag: "Britannia Digital Transformation" Media 2023
+10 Redseer / Bernstein: "India Q-Commerce Market Report" Market Research 2024
+11 LangGraph Documentation: "Multi-Agent Architecture" Technical 2024
+12 CrewAI Documentation: "Agentic Workflows" Technical 2024
+13 Google OR-Tools: "Vehicle Routing Problem" Technical 2024
+14 NASSCOM FMCG Tech Report Industry 2024
+15 SAP: "Agentic AI in Supply Chain Networks" Technical 2024
+? 2025 ? Agentic AI Biscuit Supply Chain Project
+This document is a living reference ? update as research and implementation progress.
+Version 1.0 | Document created: September 2025
+Page 56 of 56

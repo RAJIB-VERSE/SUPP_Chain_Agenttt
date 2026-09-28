@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniStock AI | Intelligent Supply Chain</title>
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-cubes logo-icon"></i>
+                <h2>OmniStock AI</h2>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#" id="nav-dashboard"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
+                <li><a href="#" id="nav-inventory"><i class="fa-solid fa-boxes-stacked"></i> Inventory Status</a></li>
+                <li><a href="#" id="nav-ml-forecast"><i class="fa-solid fa-brain"></i> ML Forecasting</a></li>
+                <li><a href="#" id="nav-po"><i class="fa-solid fa-file-invoice-dollar"></i> Auto-PO</a></li>
+            </ul>
+            <div class="system-status">
+                <div class="status-indicator"></div>
+                <span>ML Pipeline: ACTIVE</span>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <header class="topbar">
+                <div class="search-bar">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search SKUs, Stores...">
+                </div>
+                <div class="profile">
+                    <div class="notification-bell">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <img src="https://ui-avatars.com/api/?name=Supply+Manager&background=6c5ce7&color=fff" alt="Profile" class="avatar">
+                </div>
+            </header>
+
+            <div class="page-content" id="main-view">
+                <!-- Dashboard View -->
+                <div id="dashboard-view" class="view active-view">
+                    <div class="header-section">
+                        <h1>Supply Chain Command Center</h1>
+                        <p class="subtitle">Live insights powered by AWS DynamoDB & Random Forest ML.</p>
+                    </div>
+
+                    <div class="kpi-grid">
+                        <div class="kpi-card glass">
+                            <div class="kpi-icon healthy"><i class="fa-solid fa-check-circle"></i></div>
+                            <div class="kpi-details">
+                                <h3>Healthy SKUs</h3>
+                                <p class="kpi-value" id="kpi-healthy">--</p>
+                            </div>
+                        </div>
+                        <div class="kpi-card glass">
+                            <div class="kpi-icon warning"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                            <div class="kpi-details">
+                                <h3>Warning Alerts</h3>
+                                <p class="kpi-value" id="kpi-warning">--</p>
+                            </div>
+                        </div>
+                        <div class="kpi-card glass">
+                            <div class="kpi-icon critical"><i class="fa-solid fa-skull-crossbones"></i></div>
+                            <div class="kpi-details">
+                                <h3>Critical Stockouts</h3>
+                                <p class="kpi-value" id="kpi-critical">--</p>
+                            </div>
+                        </div>
+                        <div class="kpi-card glass ml-kpi">
+                            <div class="kpi-icon purple"><i class="fa-solid fa-bolt"></i></div>
+                            <div class="kpi-details">
+                                <h3>Backend Latency</h3>
+                                <p class="kpi-value"><span id="kpi-latency">--</span> ms</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-section glass">
+                        <div class="table-header">
+                            <h2>Critical Inventory Watchlist</h2>
+                            <button class="btn btn-primary" onclick="generateAutoPO()"><i class="fa-solid fa-magic"></i> Auto-Generate PO</button>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="modern-table" id="dashboard-inventory-table">
+                                <thead>
+                                    <tr>
+                                        <th>Store</th>
+                                        <th>SKU Name</th>
+                                        <th>Current Stock</th>
+                                        <th>Runway (Days)</th>
+                                        <th>Risk Level</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="inventory-table-body">
+                                    <!-- Populated via JS -->
+                                    <tr>
+                                        <td colspan="6" class="loading-state"><i class="fa-solid fa-circle-notch fa-spin"></i> Fetching Live DynamoDB Data...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inventory View -->
+                <div id="inventory-view" class="view" style="display: none;">
+                    <div class="header-section">
+                        <h1>Inventory Status</h1>
+                        <p class="subtitle">Live tracking across all stores</p>
+                    </div>
+                    <div class="table-section glass">
+                        <div class="table-header">
+                            <h2>All SKUs</h2>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="modern-table" id="full-inventory-table">
+                                <!-- Duplicates dashboard table structure -->
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ML Forecasting View -->
+                <div id="forecast-view" class="view" style="display: none;">
+                    <div class="header-section">
+                        <h1>ML Demand Forecasting</h1>
+                        <p class="subtitle">Run predictions using Single Exponential Smoothing (SES) algorithm</p>
+                    </div>
+                    <div class="glass" style="padding: 2rem;">
+                        <h3>Select SKU for Forecast</h3>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                            <select id="forecast-sku-select" class="btn btn-outline" style="background: var(--bg-secondary); color: white;">
+                                <option value="STR-001|SKU-001">STR-001 : SKU-001 (Biskfarm Marie Classic)</option>
+                                <option value="STR-001|SKU-003">STR-001 : SKU-003 (Parle-G Gold)</option>
+                                <option value="STR-001|SKU-004">STR-001 : SKU-004 (Biskfarm Top Butter Cookie)</option>
+                                <option value="STR-001|SKU-005">STR-001 : SKU-005 (Britannia Good Day Butter)</option>
+                                <option value="STR-001|SKU-006">STR-001 : SKU-006 (Sunfeast Dark Fantasy)</option>
+                                <option value="STR-001|SKU-007">STR-001 : SKU-007 (Oreo Original Vanilla)</option>
+                                <option value="STR-001|SKU-008">STR-001 : SKU-008 (Anmol Dream Lite)</option>
+                                <option value="STR-001|SKU-010">STR-001 : SKU-010 (Britannia 50-50 Maska Chaska)</option>
+                            </select>
+                            <button class="btn btn-primary" onclick="runStandaloneForecast()"><i class="fa-solid fa-brain"></i> Run Forecast</button>
+                        </div>
+                        <div id="standalone-forecast-result" style="margin-top: 2rem;"></div>
+                    </div>
+                </div>
+
+                <!-- Auto-PO View -->
+                <div id="po-view" class="view" style="display: none;">
+                    <div class="header-section">
+                        <h1>Auto Purchase Orders</h1>
+                        <p class="subtitle">AI-generated replenishment orders</p>
+                    </div>
+                    <div class="glass" style="padding: 2rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                            <h3>Pending Draft Orders</h3>
+                            <button class="btn btn-primary" onclick="generateAutoPO(true)"><i class="fa-solid fa-magic"></i> Generate New PO</button>
+                        </div>
+                        <div id="po-results-area">
+                            <p style="color: var(--text-secondary);">No pending orders. Click generate to check stock levels.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for ML Forecast Details (Dashboard) -->
+                <div class="modal-overlay" id="ml-modal">
+                    <div class="modal glass">
+                        <div class="modal-header">
+                            <h2><i class="fa-solid fa-brain"></i> ML Demand Forecast</h2>
+                            <button class="close-btn" onclick="closeModal()"><i class="fa-solid fa-times"></i></button>
+                        </div>
+                        <div class="modal-body" id="ml-modal-body">
+                            <!-- Populated dynamically -->
+                        </div>
+                        <div class="modal-actions">
+                            <button class="btn btn-outline" onclick="closeModal()">Close</button>
+                            <button class="btn btn-primary" onclick="triggerTelegramAlert()"><i class="fa-brands fa-telegram"></i> Send Telegram Alert</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
